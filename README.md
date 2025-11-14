@@ -192,3 +192,7 @@ Doy inicio al desarrollo del segundo parcial. Como en el anterior, todo el desar
 `login-feature` --> javascript destinado a completar la funcionalidad del login
 
 `form-validations` --> javascript destinado a validar los distintos campos del form de la seccion "quiero colaborar"
+
+### 📅 Fecha: [14/11/2025]
+**Comentario:** 
+Voy a resolver el login en un pop-up. Según las consignas, no existe una página "login.html", pero queda muy feo que el formulario de login se vea directamente en el index.html que es la home, en donde también ingresan usuarios que son simplemente visitantes interesados en el evento y no tienen una cuenta. Lo lógico sería tener un botón en el menú que diga "Login" y la misma te redirija a la página para loggearte. Como esto no está contemplado en las consignas, un pop-up suena lo más sensato para resolver esta funcionalidad.
