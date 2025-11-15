@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Admin - GameHub</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__wrapper">
+            <a href="index.html" class="header__logo">GameHub</a>
+            <ul class="header__nav">
+                <li><a href="index.html" class="header__link">Volver al inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section__wrapper">
+            <div class="section__header">
+                <h2 class="section__title">Bienvenido/a, [Administrador]</h2>
+                <span>Gestiona los torneos y campañas desde aquí</span>
+            </div>
+        </section>
+        <section class="section__wrapper">
+            <div class="section__header">
+                <h2 class="section__title">Gestión de torneos</h2>
+                <span>Agrega, edita o elimina torneos</span>
+                <button class="button button--primary">Agregar torneo</button>
+            </div>
+            <div class="section__content">
+                <div class="section__content--grid grid--2">
+                    <article class="card grid--item">
+                        <img src="./images/" alt="">
+                        <div class="card__content">
+                            <span class="active">Activo</span>
+                            <h2>Copa Solidaridad</h2>
+                            <p>Recaudando para 'Comedor Sonrisas'</p>
+                            <p>Fecha: 15/07/2024 - Inscriptos: 25/40</p>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--secondary">Editar</a>
+                            <a href="#" class="button button--danger">Eliminar</a>
+                        </div>
+                    </article>
+                    <article class="card grid--item">
+                        <img src="./images/" alt="">
+                        <div class="card__content">
+                            <span class="inactive">Finalizado</span>
+                            <h2>Torneo Verano 2024</h2>
+                            <p>Competencia abierta para todos</p>
+                            <p>Fecha: 01/06/2024 - Inscriptos: 40/40</p>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--secondary">Editar</a>
+                            <a href="#" class="button button--danger">Eliminar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
