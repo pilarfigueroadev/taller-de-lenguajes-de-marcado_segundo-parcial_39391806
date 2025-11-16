@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameHub Solidario organiza torneos de videojuegos para recaudar donaciones destinadas a comedores y ONGs locales. ¡Únete a nuestra comunidad gaming con propósito!">
+    <meta name="keywords" content="torneos gaming, esports solidarios, videojuegos benéficos, League of Legends, Valorant, donaciones, ONG, comunidad gamer">
+    <meta name="author" content="GameHub Solidario">
+    <meta name="robots" content="index, follow">
+       
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -10,47 +15,47 @@
     <title>GameHub</title>
 </head>
 <body class="home--page">
-    <header class="header">
-        <nav class="header__wrapper">
+    <header class="header" role="banner">
+        <nav class="header__wrapper" role="navigation" aria-label="Navegación principal">
             <div class="logo">
-                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
                 </svg>
                 <h1>GameHub</h1>
             </div>
-            <ul class="header__menu list__wrapper">
-                <li class="list__item"><a class="header__link header__link--active" href="index.html">Inicio</a></li>
-                <li class="list__item"><a class="header__link" href="quierocolaborar.html">Colaborá</a></li>
-                <li class="list__item"><a class="header__link popup__open" href="#">Login</a></li>
+            <ul class="header__menu list__wrapper" role="menubar">
+                <li class="list__item" role="none"><a class="header__link header__link--active" href="index.html" role="menuitem" aria-current="page">Inicio</a></li>
+                <li class="list__item" role="none"><a class="header__link" href="quierocolaborar.html" role="menuitem">Colaborá</a></li>
+                <li class="list__item" role="none"><a class="header__link popup__open" href="#" role="menuitem" aria-label="Abrir formulario de inicio de sesión">Login</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main">
-        <section class="section__wrapper hero">
+    <main class="main" role="main">
+        <section class="section__wrapper hero" aria-labelledby="hero-title">
             <div class="hero__content">
                 <h2 class="hero__title">Juega con Causa. Cambia el Juego.</h2>
                 <p class="hero__description">Organizamos torneos de videojuegos para recaudar donaciones y apoyar a comedores y ONGs locales. ¡Tu pasión por el gaming puede generar un impacto real!</p>
-                <a href="quierocolaborar.html" class="button button--primary">Únete a la causa</a>
+                <a href="quierocolaborar.html" class="button button--primary" aria-label="Unirse como colaborador a GameHub Solidario">Únete a la causa</a>
             </div>
         </section>
 
-        <section class="popup__wrapper">
+        <section class="popup__wrapper" role="dialog" aria-labelledby="login-title" aria-hidden="true">
             <div class="popup__content">
-                <button class="popup__close">&times;</button>
+                <button class="popup__close" aria-label="Cerrar formulario de inicio de sesión">&times;</button>
                 <div class="popup__header">
-                    <span class="material-icons-outlined">sports_esports</span>
-                    <h3>Bienvenido de vuelta</h3>
+                    <span class="material-icons-outlined" aria-hidden="true">sports_esports</span>
+                    <h3 id="login-title">Bienvenido de vuelta</h3>
                 </div>
-                <form class="form--login" action="admin.html">
+                <form class="form--login" action="admin.html" aria-labelledby="login-title">
                     <label for="username">Nombre de Usuario</label>
-                    <input type="text" id="username" name="username" placeholder="Tu nombre de usuario" required>
+                    <input type="text" id="username" name="username" placeholder="Tu nombre de usuario" required aria-describedby="username-help">
 
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required aria-describedby="password-help">
                     
-                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <a href="#" aria-label="Recuperar contraseña olvidada">¿Olvidaste tu contraseña?</a>
 
-                    <button type="submit" class="button button--primary">Entrar</button>
+                    <button type="submit" class="button button--primary" aria-describedby="login-submit-help">Entrar</button>
                 </form>
             </div>
         </section>
@@ -62,7 +67,7 @@
             <div class="section__content">
                 <div class="section__content--grid grid--2">
                     <article class="card grid--item">
-                        <div class="card__content tournament--1">
+                        <div class="card__content tournament tournament--1">
                         </div>
                         <div class="card__footer">
                             <span>League of Legends - 15/07/2024</span>
@@ -73,7 +78,7 @@
                         </div>
                     </article>
                     <article class="card grid--item">
-                        <div class="card__content tournament--2">
+                        <div class="card__content tournament tournament--2">
                         </div>
                         <div class="card__footer">
                             <span>Valorant - 22/07/2024</span>
@@ -113,39 +118,39 @@
                             <h2 class="section__title">Ranking del evento</h2>
                         </div>
                         <div class="article__content">
-                            <table class="table__wrapper">
+                            <table class="table__wrapper" role="table" aria-label="Tabla de ranking de jugadores">
                                 <thead>
-                                    <tr>
-                                        <th>Posición</th>
-                                        <th>Jugador</th>
-                                        <th>Puntos</th>
+                                    <tr role="row">
+                                        <th role="columnheader" scope="col">Posición</th>
+                                        <th role="columnheader" scope="col">Jugador</th>
+                                        <th role="columnheader" scope="col">Puntos</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>GamerPro123</td>
-                                        <td>1500</td>
+                                    <tr role="row">
+                                        <td role="gridcell">1</td>
+                                        <td role="gridcell">GamerPro123</td>
+                                        <td role="gridcell">1500</td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>DragonSlayer</td>
-                                        <td>1400</td>
+                                    <tr role="row">
+                                        <td role="gridcell">2</td>
+                                        <td role="gridcell">DragonSlayer</td>
+                                        <td role="gridcell">1400</td>
                                     </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>NinjaWarrior</td>
-                                        <td>1300</td>
+                                    <tr role="row">
+                                        <td role="gridcell">3</td>
+                                        <td role="gridcell">NinjaWarrior</td>
+                                        <td role="gridcell">1300</td>
                                     </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>PixelMaster</td>
-                                        <td>1200</td>
+                                    <tr role="row">
+                                        <td role="gridcell">4</td>
+                                        <td role="gridcell">PixelMaster</td>
+                                        <td role="gridcell">1200</td>
                                     </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>ShadowHunter</td>
-                                        <td>1100</td>
+                                    <tr role="row">
+                                        <td role="gridcell">5</td>
+                                        <td role="gridcell">ShadowHunter</td>
+                                        <td role="gridcell">1100</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -215,23 +220,23 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <!-- Developed by Pilar Figueroa -->
         <div class="footer__content">
             <span>&copy; 2025 GameHub Solidario. Todos los derechos reservados.</span>
-            <ul class="list__wrapper footer__social">
-                <li>
-                    <a href="https://www.youtube.com/">
+            <ul class="list__wrapper footer__social" role="list" aria-label="Redes sociales de GameHub Solidario">
+                <li role="listitem">
+                    <a href="https://www.youtube.com/" aria-label="Visitar canal de YouTube de GameHub Solidario">
                         <img src="./images/youtube.png" alt="YouTube">
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.twitter.com/">
+                <li role="listitem">
+                    <a href="https://www.twitter.com/" aria-label="Seguir en Twitter a GameHub Solidario">
                         <img src="./images/twitter.png" alt="Twitter">
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.instagram.com/">
+                <li role="listitem">
+                    <a href="https://www.instagram.com/" aria-label="Seguir en Instagram a GameHub Solidario">
                         <img src="./images/instagram.png" alt="Instagram">
                     </a>
                 </li>

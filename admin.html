@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panel de administración de GameHub Solidario. Gestiona torneos benéficos, campañas y eventos gaming para causas solidarias.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="GameHub Solidario">
+    
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Admin - GameHub</title>
+    <title>Panel de Administración - GameHub Solidario</title>
 </head>
 <body class="admin--dashboard">
-    <header class="header">
-        <nav class="header__wrapper">
+    <header class="header" role="banner">
+        <nav class="header__wrapper" role="navigation" aria-label="Navegación de administración">
             <div class="logo">
-                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
                 </svg>
                 <h1>GameHub</h1>
             </div>
-            <ul class="header__menu list__wrapper">
-                <li class="list__item"><a href="index.html" class="header__link">Volver al inicio</a></li>
+            <ul class="header__menu list__wrapper" role="menubar">
+                <li class="list__item" role="none"><a href="index.html" class="header__link" role="menuitem" aria-label="Volver a la página principal">Volver al inicio</a></li>
             </ul>
         </nav>
     </header>
