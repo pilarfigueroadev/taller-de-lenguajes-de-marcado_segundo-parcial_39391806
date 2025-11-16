@@ -24,12 +24,12 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 - ✅ Galería (streams, finales, entrega de donaciones)
 
 #### Sistema de Login (Solo Admins)
-- ⏳ Formulario de login
-- ⏳ Validación de usuario: `mari`
-- ⏳ Validación de contraseña: `123`
-- ⏳ Redirección correcta a `admin.html?user=mari` si login exitoso
-- ⏳ Mensaje "Usuario incorrecto" si login falla
-- ⏳ Evitar redirección si credenciales incorrectas
+- ✅ Formulario de login
+- ✅ Validación de usuario: `mari`
+- ✅ Validación de contraseña: `123`
+- ✅ Redirección correcta a `admin.html?user=mari` si login exitoso
+- ✅ Mensaje "Usuario incorrecto" si login falla
+- ✅ Evitar redirección si credenciales incorrectas
 
 #### Botones de Colaboración
 - ✅ Botón "Quiero colaborar" en cada torneo/campaña
