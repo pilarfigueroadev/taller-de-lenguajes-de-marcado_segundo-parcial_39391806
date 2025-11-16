@@ -225,6 +225,7 @@ body {
 .section__content--grid {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
@@ -240,20 +241,31 @@ body {
     object-fit: cover;
 }
 
-.card__content {
-    padding: 1rem;
-    line-height: 1.5;
+.tournament--1 {
+    background-image: url("../images/torneo1.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.tournament--2 {
+    background-image: url("../images/torneo2.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card__footer {
     margin: 1rem 0;
+    padding: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .card__footer .button {
     width: 90%;
+    margin-top: 1rem;
     text-align: center;
 }
 

@@ -186,8 +186,6 @@ Doy inicio al desarrollo del segundo parcial. Como en el anterior, todo el desar
 
 `css-styles-development` --> estilado de todas las paginas
 
-`responsive-development` --> pulir mediaqueries
-
 `login-feature` --> javascript destinado a completar la funcionalidad del login
 
 `form-validations` --> javascript destinado a validar los distintos campos del form de la seccion "quiero colaborar"
