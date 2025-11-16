@@ -101,3 +101,36 @@ if ($admin) {
         $('.edit--tournament--form .form').reset()
     })
 }
+
+
+if ($colaborate) {
+    $('#interest').addEventListener('change', (event) => {
+        const selectedOption = event.target.value
+        if (selectedOption === 'money') {
+            $('.money--options').classList.add('active')
+            $('.work--options').classList.remove('active')
+            $('.diffusion--options').classList.remove('active')
+        } else if (selectedOption === 'work') {
+            $('.work--options').classList.add('active')
+            $('.money--options').classList.remove('active')
+            $('.diffusion--options').classList.remove('active')
+        } else if (selectedOption === 'diffusion') {
+            $('.diffusion--options').classList.add('active')
+            $('.money--options').classList.remove('active')
+            $('.work--options').classList.remove('active')
+        } else {
+            $('.money--options').classList.remove('active')
+            $('.work--options').classList.remove('active')
+            $('.diffusion--options').classList.remove('active')
+        }
+    })
+
+    $('.form').addEventListener('submit', (event) => {
+        event.preventDefault()
+        alert('¡Gracias por tu interés en colaborar! Nos pondremos en contacto contigo pronto.')
+        $('.form').reset()
+        $('.money--options').classList.remove('active')
+        $('.work--options').classList.remove('active')
+        $('.diffusion--options').classList.remove('active')
+    })
+}

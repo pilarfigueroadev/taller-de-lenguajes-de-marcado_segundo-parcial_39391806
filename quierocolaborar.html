@@ -80,6 +80,7 @@
 
                     <label for="interest">Tipo de colaboración:</label>
                     <select id="interest" name="interest" required>
+                        <option value="">Selecciona una opción</option>
                         <option value="money">Dinero</option>
                         <option value="work">Trabajo</option>
                         <option value="diffusion">Difusión</option>
@@ -87,27 +88,83 @@
 
                     <!-- This ones should be hidden until the user selects an option in the dropdown above -->
                      <div class="money--options">
-                        <label for="currency">Cantidad a donar</label>
-                         <input type="number" name="currency" id="currency" placeholder="Monto a donar">
+                        <label for="currency">Cantidad a donar:</label>
+                        <input type="number" name="currency" id="currency" placeholder="Monto a donar">
+                        
+                        <label for="donation-type">Tipo de aporte:</label>
+                        <select name="donation-type" id="donation-type">
+                            <option value="">Selecciona el tipo de aporte</option>
+                            <option value="one-time">Único</option>
+                            <option value="monthly">Mensual</option>
+                        </select>
+                        
+                        <label for="payment-method">Medio de pago:</label>
+                        <select name="payment-method" id="payment-method">
+                            <option value="">Selecciona el medio de pago</option>
+                            <option value="credit-card">Tarjeta de crédito</option>
+                            <option value="debit-card">Tarjeta de débito</option>
+                            <option value="bank-transfer">Transferencia bancaria</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="mercadopago">Mercado Pago</option>
+                        </select>
                      </div>
                     <div class="work--options">
-                        <label for="skills">Habilidades y experiencia</label>
-                        <textarea name="skills" id="skills"></textarea>
-                        <label for="availability">Disponibilidad horaria</label>
+                        <label for="role">Rol deseado:</label>
+                        <select name="role" id="role">
+                            <option value="">Selecciona un rol</option>
+                            <option value="organizer">Organizador de eventos</option>
+                            <option value="moderator">Moderador de torneos</option>
+                            <option value="streamer">Streamer/Caster</option>
+                            <option value="social-media">Community Manager</option>
+                            <option value="designer">Diseñador gráfico</option>
+                            <option value="developer">Desarrollador web</option>
+                        </select>
+                        
+                        <label for="skills">Habilidades y experiencia:</label>
+                        <textarea name="skills" id="skills" placeholder="Describe tus habilidades y experiencia relevante"></textarea>
+                        
+                        <label for="availability">Disponibilidad horaria:</label>
                         <select name="availability" id="availability">
+                            <option value="">Selecciona tu disponibilidad</option>
                             <option value="full-time">Tiempo completo</option>
                             <option value="part-time">Medio tiempo</option>
                             <option value="weekends">Fines de semana</option>
+                            <option value="evenings">Tardes/Noches</option>
                         </select>
-                        <label for="location">Ubicación</label>
-                        <input type="text" name="location" id="location" placeholder="Ubicación">
+                        
+                        <label for="location">Zona geográfica:</label>
+                        <input type="text" name="location" id="location" placeholder="Tu ciudad o región">
+                        
+                        <label for="preferred-platform">Plataforma preferida:</label>
+                        <select name="preferred-platform" id="preferred-platform">
+                            <option value="">Selecciona una plataforma</option>
+                            <option value="pc">PC</option>
+                            <option value="playstation">PlayStation</option>
+                            <option value="xbox">Xbox</option>
+                            <option value="nintendo">Nintendo Switch</option>
+                            <option value="mobile">Móvil</option>
+                        </select>
+                        
+                        <label for="favorite-game">Juego preferido:</label>
+                        <input type="text" name="favorite-game" id="favorite-game" placeholder="¿Cuál es tu juego favorito?">
                     </div>
                      <div class="diffusion--options">
-                        <label for="favorite-game">Juego favorito</label>
-                        <input type="text" name="favorite-game" id="favorite-game" placeholder="Juego favorito">
-                        <label for="social">Red social</label>
-                        <input type="text" name="social" id="social" placeholder="(URL) Red social">
-                        <button class="button button--secondary">Descarga kit de prensa</button>
+                        <label for="social">Redes sociales:</label>
+                        <input type="url" name="social" id="social" placeholder="https://instagram.com/tuusuario">
+                        
+                        <label for="social-additional">Redes adicionales:</label>
+                        <textarea name="social-additional" id="social-additional" placeholder="Enlaces a otras redes sociales (Twitter, TikTok, YouTube, etc.)"></textarea>
+                        
+                        <label for="publication-frequency">Frecuencia de publicación:</label>
+                        <select name="publication-frequency" id="publication-frequency">
+                            <option value="">Selecciona la frecuencia</option>
+                            <option value="daily">Diario</option>
+                            <option value="weekly">Semanal</option>
+                            <option value="monthly">Mensual</option>
+                            <option value="per-event">Por evento</option>
+                        </select>
+                        
+                        <button type="button" class="button button--secondary">Descargar kit de prensa</button>
                     </div>
                     <button type="submit" class="button button--primary">Enviar</button>
                 </form>

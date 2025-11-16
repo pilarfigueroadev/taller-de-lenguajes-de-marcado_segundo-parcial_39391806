@@ -77,7 +77,7 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 ### 3. 🤝 quierocolaborar.html (Formulario Público)
 
 #### Estructura General
-- ⏳ Mismo header y footer que el resto del sitio
+- ✅ Mismo header y footer que el resto del sitio
 - ✅ Formulario con datos personales
 - ✅ Sección de tipo de colaboración
 
@@ -91,25 +91,25 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 ##### Opción: Dinero 💰
 - ✅ Selector de tipo de colaboración "Dinero"
 - ✅ Campo: Elegir monto
-- ⏳ Campo: Tipo de aporte (único/mensual)
-- ⏳ Campo: Medio de pago
-- ⏳ Mostrar campos dinámicamente según selección
+- ✅ Campo: Tipo de aporte (único/mensual)
+- ✅ Campo: Medio de pago
+- ✅ Mostrar campos dinámicamente según selección
 
 ##### Opción: Trabajo 💼
 - ✅ Selector de tipo de colaboración "Trabajo"
-- ⏳ Campo: Rol deseado
+- ✅ Campo: Rol deseado
 - ✅ Campo: Disponibilidad
 - ✅ Campo: Zona geográfica
-- ⏳ Campo: Plataforma preferida
+- ✅ Campo: Plataforma preferida
 - ✅ Campo: Juego preferido
-- ⏳ Mostrar campos dinámicamente según selección
+- ✅ Mostrar campos dinámicamente según selección
 
 ##### Opción: Difusión 📢
 - ✅ Selector de tipo de colaboración "Difusión"
 - ✅ Campo: Redes sociales
-- ⏳ Campo: Frecuencia de publicación
+- ✅ Campo: Frecuencia de publicación
 - ✅ Opción: Descargar kit de prensa
-- ⏳ Mostrar campos dinámicamente según selección
+- ✅ Mostrar campos dinámicamente según selección
 
 #### Navegación
 - ✅ Botón "Volver al home"
@@ -131,7 +131,7 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 
 ### Funcionalidad JavaScript
 - ✅ Sistema de login funcional
-- ⏳ Formularios dinámicos en quierocolaborar.html
+- ✅ Formularios dinámicos en quierocolaborar.html
 - ✅ ABM visual en admin.html
 - ✅ Validaciones de formularios
 
