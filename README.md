@@ -16,12 +16,12 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 
 #### Contenido Principal
 - ✅ Portada atractiva
-- ⏳ Sección misión y objetivos (gaming + impacto social)
-- ⏳ Torneos en curso
+- ✅ Sección misión y objetivos (gaming + impacto social)
+- ✅ Torneos en curso
 - ✅ Reglamentos
 - ✅ Ranking/tabla de posiciones
 - ✅ Testimonios de la comunidad
-- ⏳ Galería (streams, finales, entrega de donaciones)
+- ✅ Galería (streams, finales, entrega de donaciones)
 
 #### Sistema de Login (Solo Admins)
 - ⏳ Formulario de login
@@ -34,7 +34,7 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 #### Botones de Colaboración
 - ✅ Botón "Quiero colaborar" en cada torneo/campaña
 - ✅ Redirección a `quierocolaborar.html`
-- ✅ Ejemplo implementado: "Copa Primavera EA FC"
+- ✅ Ejemplo implementado: "Copa Solidaridad"
 
 ---
 
