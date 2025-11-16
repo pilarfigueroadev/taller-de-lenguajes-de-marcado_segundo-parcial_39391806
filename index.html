@@ -9,8 +9,7 @@
     <meta name="robots" content="index, follow">
        
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -37,15 +36,19 @@
             <div class="hero__content">
                 <h2 class="hero__title">Juega con Causa. Cambia el Juego.</h2>
                 <p class="hero__description">Organizamos torneos de videojuegos para recaudar donaciones y apoyar a comedores y ONGs locales. ¡Tu pasión por el gaming puede generar un impacto real!</p>
-                <a href="quierocolaborar.html" class="button button--primary" aria-label="Unirse como colaborador a GameHub Solidario">Únete a la causa</a>
+                <a href="quierocolaborar.html" class="button button--primary" aria-label="Unirse como colaborador a GameHub Solidario">
+                    <i class="bi bi-people-fill me-2"></i>Únete a la causa
+                </a>
             </div>
         </section>
 
         <section class="popup__wrapper" role="dialog" aria-labelledby="login-title" aria-hidden="true">
             <div class="popup__content">
-                <button class="popup__close" aria-label="Cerrar formulario de inicio de sesión">&times;</button>
+                <button class="popup__close" aria-label="Cerrar formulario de inicio de sesión">
+                    <i class="bi bi-x-lg"></i>
+                </button>
                 <div class="popup__header">
-                    <span class="material-icons-outlined" aria-hidden="true">sports_esports</span>
+                    <i class="bi bi-controller" aria-hidden="true"></i>
                     <h3 id="login-title">Bienvenido de vuelta</h3>
                 </div>
                 <form class="form--login" action="admin.html" aria-labelledby="login-title">
@@ -76,7 +79,9 @@
                             <h2>Copa Solidaridad</h2>
                             <p>Recaudando para 'Comedor Sonrisas'</p>
                             <p>Pozo actual: $15,400</p>
-                            <a href="quierocolaborar.html" class="button button--primary">Quiero colaborar</a>
+                            <a href="quierocolaborar.html" class="button button--primary">
+                                <i class="bi bi-heart-fill me-2"></i>Quiero colaborar
+                            </a>
                         </div>
                     </article>
                     <article class="card grid--item">
@@ -87,7 +92,9 @@
                             <h2>Torneo Benéfico 'Un Tiro a la Vez'</h2>
                             <p>Apoyando a 'Refugio Animal Patitas'</p>
                             <p>Pozo actual: $8,950</p>
-                            <a href="quierocolaborar.html" class="button button--primary">Quiero colaborar</a>
+                            <a href="quierocolaborar.html" class="button button--primary">
+                                <i class="bi bi-heart-fill me-2"></i>Quiero colaborar
+                            </a>
                         </div>
                     </article>
                 </div>
@@ -98,7 +105,9 @@
                 <div class="section__content--grid grid--2">
                     <article class="grid--item rules">
                         <div class="article__header">
-                            <h2 class="section__title">Reglamento</h2>
+                            <h2 class="section__title">
+                                <i class="bi bi-file-text me-2"></i>Reglamento
+                            </h2>
                         </div>
                         <div class="article__content">
                             <div class="step">
@@ -117,7 +126,9 @@
                     </article>
                     <article class="grid--item">
                         <div class="article__header">
-                            <h2 class="section__title">Ranking del evento</h2>
+                            <h2 class="section__title">
+                                <i class="bi bi-trophy me-2"></i>Ranking del evento
+                            </h2>
                         </div>
                         <div class="article__content">
                             <table class="table__wrapper" role="table" aria-label="Tabla de ranking de jugadores">

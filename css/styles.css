@@ -39,6 +39,28 @@
     border: 0;
 }
 
+/* Bootstrap Icons Integration */
+.bi {
+    font-size: inherit;
+    vertical-align: middle;
+}
+
+.button .bi {
+    font-size: 0.9em;
+}
+
+.me-2 {
+    margin-right: 0.5rem;
+}
+
+/* Popup specific styles */
+.popup__header .bi-controller {
+    font-size: 3rem;
+    color: var(--button--primary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 a {
     text-decoration: none;
 }
