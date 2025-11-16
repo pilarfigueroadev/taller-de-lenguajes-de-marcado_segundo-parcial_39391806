@@ -15,7 +15,7 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 - ✅ Footer consistente en todo el sitio
 
 #### Contenido Principal
-- ⏳ Portada atractiva
+- ✅ Portada atractiva
 - ⏳ Sección misión y objetivos (gaming + impacto social)
 - ⏳ Torneos en curso
 - ✅ Reglamentos
