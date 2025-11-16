@@ -180,6 +180,11 @@ body {
     font-size: var(--title-font-hero);
 }
 
+.banner__header .banner__subtitle {
+    font-size: var(--title-font-03);
+    margin-top: 0.5rem;
+}
+
 .banner__content {
     display: flex;
     flex-direction: column;
@@ -527,6 +532,15 @@ body {
     padding: 0.5rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
+    font-size: var(--font-size);
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: var(--button--primary);
+    box-shadow: 0 0 0 2px rgba(19, 236, 128, 0.2);
 }
 
 .form button {
@@ -581,6 +595,11 @@ body {
     display: block;
 }
 
+.form__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
 @media (max-width: 768px) {
     .add--tournament--form .form,
     .edit--tournament--form .form {
@@ -603,9 +622,51 @@ body {
     }
 }
 
-.form__buttons {
-    display: flex;
+.colaborate__content h3 {
+    margin-top: 1.5rem;
+}
+
+.colaborate__content p {
+
+    line-height: 1.8rem;
+}
+
+.colaborate__content ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    line-height: 2rem;
+}
+
+/* === COLLABORATION FORM OPTIONS === */
+
+.money--options,
+.work--options,
+.diffusion--options {
+    display: none;
+    flex-direction: column;
     gap: 1rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.money--options.active,
+.work--options.active,
+.diffusion--options.active {
+    display: flex;
+}
+
+.diffusion--options .button {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.colaborate__content h3 {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    line-height: 2rem;
 }
 
 .footer {

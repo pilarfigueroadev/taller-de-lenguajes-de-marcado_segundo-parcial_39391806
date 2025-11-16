@@ -5,7 +5,7 @@ const $home = $('.home--page')
 const $admin = $('.admin--dashboard')
 const $colaborate = $('.colaborate--page')
 
-if ($home) {
+if ($home || $colaborate) {
     const handleLogin = () => {
         const USERNAME = 'mari'
         const PASSWORD = '123'
@@ -41,7 +41,7 @@ if ($admin) {
         if (!username) return
         $('.admin__welcome').textContent = `Te damos la bienvenida, ${username}!`
     }
-    
+
     welcomeAdmin()
 
     const toggleTournamentForm = (formElement, className) => {
