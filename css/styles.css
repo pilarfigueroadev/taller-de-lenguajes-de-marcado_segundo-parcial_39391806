@@ -1,0 +1,232 @@
+:root {
+    --background-color: rgb(17 34 26);
+    --background-color--opacity: rgba(17, 34, 26, 0.8);
+    --background-color--secondary: rgb(25 51 38);
+    --text-color: #ffffff;
+    --border-color: rgba(222, 222, 222, 0.2);
+    --font-size: 1rem;
+    --font-details: 0.8rem;
+    --title-font-hero: 3rem;
+    --title-font-01: 2rem;
+    --title-font-02: 1.5rem;
+    --title-font-03: 1.2rem;
+    --font-family: 'Space Grotesk', Tahoma, Geneva, Verdana, sans-serif;
+    --button--primary: rgb(19, 236, 128);
+    --button--primary--hover: rgb(19, 236, 128, 0.8);
+    --button--primary--font-color: rgb(17 34 26);
+    --button--secondary: rgb(35, 72, 54);
+}
+
+/* Normalize */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* === HEADER === */
+
+.header {
+    width: 100%;
+    background-color: var(--background-color--opacity);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.header__wrapper {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header__wrapper .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: auto;
+}
+
+.header__wrapper .logo svg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.header__wrapper .logo h1 {
+    font-size: var(--title-font-03);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.header__wrapper .header__menu {
+    display: flex;
+    gap: 1.5rem;
+    width: auto;
+}
+
+.list__wrapper {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.list__wrapper .list__item .header__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.header__wrapper .list__item .header__link--active {
+    color: var(--button--primary);
+}
+
+.list__wrapper .list__item .header__link:hover {
+    color: var(--button--primary);
+    transition: color 0.3s ease;
+}
+
+/* === BUTTONS === */
+
+.button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font-size);
+    transition: background-color 0.3s ease;
+}
+
+.button--primary {
+    background-color: var(--button--primary);
+    color: var(--text-color);
+}
+
+.button--primary:hover {
+    background-color: var(--button--primary--hover);
+}
+
+/* === MAIN === */
+
+.main {
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.section__wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+.section__header {
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+}
+
+.hero {
+    background-image: 
+        linear-gradient(to right, 
+            var(--background-color) 0%, 
+            transparent 20%, 
+            transparent 80%, 
+            var(--background-color) 100%
+        ),
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+        url("../images/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.hero .hero__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.hero .hero__content h2 {
+    font-size: var(--title-font-hero);
+}
+
+.hero .hero__content p {
+    font-size: var(--title-font-03);
+    max-width: 600px;
+    padding: 20px 0;
+}
+
+.section__content {
+    margin-top: 2rem;
+}
+
+.table__wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table__wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.table__wrapper th {
+    background-color: var(--background-color--secondary);
+    font-size: var(--title-font-03);
+}
+
+.table__wrapper th, .table__wrapper td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+.table__wrapper tbody tr:hover {
+    background-color: var(--border-color);
+    transition: background-color 0.3s ease;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form label {
+    font-weight: 500;
+}
+
+.form input,
+.form select,
+.form textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.form button {
+    align-self: flex-start;
+}
+.form button:hover {
+    background-color: var(--button--primary--hover);
+}
