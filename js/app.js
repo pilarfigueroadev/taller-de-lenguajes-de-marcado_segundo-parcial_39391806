@@ -1,4 +1,5 @@
 const $ = (selector) => document.querySelector(selector)
+const $$ = (selector) => document.querySelectorAll(selector)
 
 const $home = $('.home--page')
 const $admin = $('.admin--dashboard')
@@ -40,28 +41,63 @@ if ($admin) {
         if (!username) return
         $('.admin__welcome').textContent = `Te damos la bienvenida, ${username}!`
     }
+    
+    welcomeAdmin()
 
-    const toggleAddTournamentForm = () => {
-        $('.add--tournament--form').classList.toggle('add--tournament--form--active')
-        $('.add--tournament--button').textContent = $('.add--tournament--form').classList.contains('add--tournament--form--active') ? 'Cerrar formulario' : 'Agregar torneo'
+    const toggleTournamentForm = (formElement, className) => {
+        $(formElement).classList.toggle(className)
+    }
+
+    const toggleAddTournamentButton = () => {
+        const isActive = $('.add--tournament--form').classList.contains('add--tournament--form--active')
+        $('.add--tournament--button').textContent = isActive ? 'Cerrar formulario' : 'Agregar torneo'
     }
 
     $('.add--tournament--button').addEventListener('click', () => {
-        toggleAddTournamentForm()
+        toggleTournamentForm('.add--tournament--form', 'add--tournament--form--active')
+        toggleAddTournamentButton()
     })
 
     $(".form .button--secondary").addEventListener('click', (event) => {
         event.preventDefault()
-        toggleAddTournamentForm()
+        toggleTournamentForm('.add--tournament--form', 'add--tournament--form--active')
+        toggleAddTournamentButton()
         $('.add--tournament--form .form').reset()
     })
 
     $('.add--tournament--form .form').addEventListener('submit', (event) => {
         event.preventDefault()
-        alert('Torneo agregado correctamente!')
-        toggleAddTournamentForm()
+        toggleTournamentForm('.add--tournament--form', 'add--tournament--form--active')
         $('.add--tournament--form .form').reset()
     })
 
-    welcomeAdmin()
+    $$('.tournaments .button--primary').forEach(button => {
+        button.addEventListener('click', () => {
+            toggleTournamentForm('.edit--tournament--form', 'edit--tournament--form--active')
+            $('.tournaments').style.display = 'none'
+        })
+    })
+
+    $$('.tournaments .button--secondary').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const adminConfirmation = confirm('Seguro que quieres eliminar este evento?')
+            if (adminConfirmation) {
+                event.target.closest('.grid--item').remove()
+            }
+        })
+    })
+
+    $('.edit--tournament--form .button--secondary').addEventListener('click', (event) => {
+        event.preventDefault()
+        toggleTournamentForm('.edit--tournament--form', 'edit--tournament--form--active')
+        $('.tournaments').style.display = 'block'
+        $('.edit--tournament--form .form').reset()
+    })
+
+    $('.edit--tournament--form .form').addEventListener('submit', (event) => {
+        event.preventDefault()
+        toggleTournamentForm('.edit--tournament--form', 'edit--tournament--form--active')
+        $('.tournaments').style.display = 'block'
+        $('.edit--tournament--form .form').reset()
+    })
 }

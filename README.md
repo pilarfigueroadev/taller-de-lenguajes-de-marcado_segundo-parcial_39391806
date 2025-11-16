@@ -56,14 +56,14 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 - ✅ Campo: Objetivo solidario
 
 ##### Baja de Torneos
-- ⏳ Eliminar torneo/campaña del listado
+- ✅ Eliminar torneo/campaña del listado
 
 ##### Modificación de Torneos
-- ⏳ Editar datos existentes
-- ⏳ Campo: Reglas
-- ⏳ Campo: Premios simbólicos
-- ⏳ Campo: Enlace a reglamento PDF
-- ⏳ Campo: Link a stream
+- ✅ Editar datos existentes
+- ✅ Campo: Reglas
+- ✅ Campo: Premios simbólicos
+- ✅ Campo: Enlace a reglamento PDF
+- ✅ Campo: Link a stream
 
 #### Funcionalidades Opcionales
 - ⏳ Listar inscriptos

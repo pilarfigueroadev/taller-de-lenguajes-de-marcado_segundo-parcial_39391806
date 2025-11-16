@@ -88,24 +88,41 @@
                 </form>
             </section>
         </div>
-        <section class="section__wrapper">
+        <section class="section__wrapper tournaments">
             <div class="section__content">
                 <div class="section__content--grid grid--2">
                     <article class="card grid--item">
-                        <img src="./images/" alt="">
-                        <div class="card__content">
+                        <div class="card__content tournament tournament--1">
+                        </div>
+                        <div class="card__footer">
                             <span class="active">Activo</span>
                             <h2>Copa Solidaridad</h2>
                             <p>Recaudando para 'Comedor Sonrisas'</p>
                             <p>Fecha: 15/07/2024 - Inscriptos: 25/40</p>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--secondary">Editar</a>
-                            <a href="#" class="button button--danger">Eliminar</a>
+                            <button href="#" class="button button--primary">Editar</button>
+                            <button href="#" class="button button--secondary">Eliminar</button>
                         </div>
                     </article>
                     <article class="card grid--item">
-                        <img src="./images/" alt="">
+                        <div class="card__content tournament tournament--2">
+                        </div>
+                        <div class="card__footer">
+                            <span class="active">Activo</span>
+                            <h2>Torneo Benéfico 'Un Tiro a la Vez'</h2>
+                            <p>Apoyando a 'Refugio Animal Patitas'</p>
+                            <p>Pozo actual: $8,950</p>
+                        </div>
+                        <div class="card__footer">
+                            <button href="#" class="button button--primary">Editar</button>
+                            <button href="#" class="button button--secondary">Eliminar</button>
+                        </div>
+                    </article>
+                    <article class="card grid--item">
+                        <div class="card__content tournament tournament--3">
+                        </div>
+                        <div class="card__footer">
                         <div class="card__content">
                             <span class="inactive">Finalizado</span>
                             <h2>Torneo Verano 2024</h2>
@@ -113,12 +130,114 @@
                             <p>Fecha: 01/06/2024 - Inscriptos: 40/40</p>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--secondary">Editar</a>
-                            <a href="#" class="button button--danger">Eliminar</a>
+                            <button href="#" class="button button--secondary">Eliminar</button>
+                        </div>
+                    </article>
+                    <article class="card grid--item">
+                        <div class="card__content tournament tournament--4">
+                        </div>
+                        <div class="card__footer">
+                        <div class="card__content">
+                            <span class="inactive">Finalizado</span>
+                            <h2>Captura la bandera</h2>
+                            <p>Colaborando con 'Fundación Esperanza'</p>
+                            <p>Fecha: 07/07/2024 - Inscriptos: 40/40</p>
+                        </div>
+                        <div class="card__footer">
+                            <button href="#" class="button button--secondary">Eliminar</button>
                         </div>
                     </article>
                 </div>
             </div>
+        </section>
+        <section class="section__wrapper edit--tournament--form">
+            <section class="section__content">
+                <div class="section__header">
+                    <h2 class="section__title">Editar Torneo</h2>
+                </div>
+                <form action="" class="form">
+                    <div class="form__field">
+                        <label for="edit-tournament">Nombre del torneo:</label>
+                        <input type="text" name="edit-tournament" id="edit-tournament" placeholder="Ej: Copa Solidaridad" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="edit-date">Fecha:</label>
+                        <input type="date" name="edit-date" id="edit-date" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="edit-game">Juego:</label>
+                        <select name="edit-game" id="edit-game">
+                            <option value="">Selecciona un juego</option>
+                            <option value="league-of-legends">League of Legends</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="fortnite">Fortnite</option>
+                            <option value="cs-go">CS:GO</option>
+                        </select>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="edit-platform">Plataforma:</label>
+                        <select name="edit-platform" id="edit-platform">
+                            <option value="">Selecciona una plataforma</option>
+                            <option value="pc">PC</option>
+                            <option value="console">Consola</option>
+                            <option value="mobile">Móvil</option>
+                        </select>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="edit-max-players">Cantidad máxima de inscriptos:</label>
+                        <input type="number" name="edit-max-players" id="edit-max-players" placeholder="Ej: 40" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="edit-donation-pool">Pozo:</label>
+                        <input type="text" name="edit-donation-pool" id="edit-donation-pool" placeholder="Ej: 5000" required>
+                    </div>
+
+                    <div class="form__field form__field--full-width">
+                        <label for="edit-description">Descripción:</label>
+                        <textarea name="edit-description" id="edit-description" placeholder="Breve descripción del torneo" required></textarea>
+                    </div>
+
+                    <div class="form__field form__field--full-width">
+                        <label for="edit-rules">Reglas:</label>
+                        <textarea name="edit-rules" id="edit-rules" placeholder="Reglas específicas del torneo" rows="4"></textarea>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="edit-symbolic-prizes">Premios simbólicos:</label>
+                        <input type="text" name="edit-symbolic-prizes" id="edit-symbolic-prizes" placeholder="Ej: Medallas, reconocimientos">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="edit-rulebook-link">Enlace a reglamento PDF:</label>
+                        <input type="url" name="edit-rulebook-link" id="edit-rulebook-link" placeholder="https://ejemplo.com/reglamento.pdf">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="edit-stream-link">Link a stream:</label>
+                        <input type="url" name="edit-stream-link" id="edit-stream-link" placeholder="https://twitch.tv/gamehub">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="edit-tournament-status">Estado del torneo:</label>
+                        <select name="edit-tournament-status" id="edit-tournament-status">
+                            <option value="">Selecciona el estado</option>
+                            <option value="active">Activo</option>
+                            <option value="finished">Finalizado</option>
+                            <option value="cancelled">Cancelado</option>
+                        </select>
+                    </div>
+
+                    <div class="form__buttons">
+                        <button type="submit" class="button button--primary">Guardar cambios</button>
+                        <button type="button" class="button button--secondary cancel--edit--button">Cancelar</button>
+                    </div>
+                </form>
+            </section>
         </section>
     </main>
 

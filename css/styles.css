@@ -432,18 +432,26 @@ body {
     object-fit: cover;
 }
 
-.tournament--1 {
-    background-image: url("../images/torneo1.png");
+.tournament {
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 300px;    
+}
+
+.tournament--1 {
+    background-image: url("../images/torneo1.png");
 }
 
 .tournament--2 {
     background-image: url("../images/torneo2.png");
-    background-size: cover;
-    background-position: center;
-    height: 300px;
+}
+
+.tournament--3 {
+    background-image: url("../images/torneo3.png");
+}
+
+.tournament--4 {
+    background-image: url("../images/torneo4.png");
 }
 
 .card__footer {
@@ -528,27 +536,34 @@ body {
     background-color: var(--button--primary--hover);
 }
 
-.add--tournament--form .form {
+/* === ADMIN FORMS === */
+
+.add--tournament--form .form,
+.edit--tournament--form .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem 1.5rem;
     align-items: start;
 }
 
-.add--tournament--form .form label {
+.add--tournament--form .form label,
+.edit--tournament--form .form label {
     margin-bottom: 0.3rem;
 }
 
-.add--tournament--form .form .form__field {
+.add--tournament--form .form .form__field,
+.edit--tournament--form .form .form__field {
     display: flex;
     flex-direction: column;
 }
 
-.add--tournament--form .form .form__field--full-width {
+.add--tournament--form .form .form__field--full-width,
+.edit--tournament--form .form .form__field--full-width {
     grid-column: 1 / -1;
 }
 
-.add--tournament--form .form .form__buttons {
+.add--tournament--form .form .form__buttons,
+.edit--tournament--form .form .form__buttons {
     grid-column: 1 / -1;
     display: flex;
     gap: 1rem;
@@ -556,22 +571,36 @@ body {
     margin-top: 1rem;
 }
 
+.add--tournament--form,
+.edit--tournament--form {
+    display: none;
+}
+
+.add--tournament--form--active,
+.edit--tournament--form--active {
+    display: block;
+}
+
 @media (max-width: 768px) {
-    .add--tournament--form .form {
+    .add--tournament--form .form,
+    .edit--tournament--form .form {
         grid-template-columns: 1fr;
     }
     
-    .add--tournament--form .form .form__field--full-width {
+    .add--tournament--form .form .form__field--full-width,
+    .edit--tournament--form .form .form__field--full-width {
         grid-column: 1;
     }
 }
 
-.add--tournament--form {
-    display: none;
-}
-
-.add--tournament--form--active {
-    display: block;
+@media (max-width: 768px) {
+    .edit--tournament--form .form {
+        grid-template-columns: 1fr;
+    }
+    
+    .edit--tournament--form .form .form__field--full-width {
+        grid-column: 1;
+    }
 }
 
 .form__buttons {
