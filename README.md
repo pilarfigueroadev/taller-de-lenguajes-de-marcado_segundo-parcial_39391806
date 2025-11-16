@@ -41,19 +41,19 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 ### 2. ⚙️ admin.html (Panel Interno)
 
 #### Funcionalidades de Acceso
-- ⏳ Leer parámetro de URL
-- ⏳ Mostrar saludo personalizado (ej: "Bienvenido/a mari")
-- ⏳ Mismo header y footer que página principal
+- ✅ Leer parámetro de URL
+- ✅ Mostrar saludo personalizado (ej: "Bienvenido/a mari")
+- ✅ Navegación consistente
 
 #### ABM de Torneos y Campañas (Maqueta Visual)
 ##### Alta de Torneos
-- ⏳ Formulario para crear torneo/campaña
-- ⏳ Campo: Título
-- ⏳ Campo: Juego
-- ⏳ Campo: Plataforma
-- ⏳ Campo: Fecha
-- ⏳ Campo: Cupos
-- ⏳ Campo: Objetivo solidario
+- ✅ Formulario para crear torneo/campaña
+- ✅ Campo: Título
+- ✅ Campo: Juego
+- ✅ Campo: Plataforma
+- ✅ Campo: Fecha
+- ✅ Campo: Cupos
+- ✅ Campo: Objetivo solidario
 
 ##### Baja de Torneos
 - ⏳ Eliminar torneo/campaña del listado

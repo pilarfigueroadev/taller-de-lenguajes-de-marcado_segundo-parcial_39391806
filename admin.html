@@ -22,19 +22,73 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="section__wrapper">
-            <div class="section__header">
-                <h2 class="section__title admin__welcome">Bienvenido/a</h2>
-                <span>Gestiona los torneos y campañas desde aquí</span>
+    <main class="main">
+        <section class="banner__wrapper">
+            <div class="banner__header">
+                <h2 class="banner__title admin__welcome"></h2>
+            </div>
+            <div class="banner__content">
+                <span>Agrega, edita o elimina torneos</span>
+                <button class="button button--primary add--tournament--button">Agregar torneo</button>
             </div>
         </section>
+        <div class="section__wrapper add--tournament--form">
+            <section class="section__content">
+                <form class="form">
+                    <div class="form__field">
+                        <label for="tournament">Nombre del torneo:</label>
+                        <input type="text" name="tournament" id="tournament" placeholder="Ej: Copa Solidaridad" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="date">Fecha:</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="game">Juego:</label>
+                        <select name="game" id="game">
+                            <option value="">Selecciona un juego</option>
+                            <option value="league-of-legends">League of Legends</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="fortnite">Fortnite</option>
+                            <option value="cs-go">CS:GO</option>
+                        </select>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="platform">Plataforma:</label>
+                        <select name="platform" id="platform">
+                            <option value="">Selecciona una plataforma</option>
+                            <option value="pc">PC</option>
+                            <option value="console">Consola</option>
+                            <option value="mobile">Móvil</option>
+                        </select>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="max-players">Cantidad máxima de inscriptos:</label>
+                        <input type="number" name="max-players" id="max-players" placeholder="Ej: 40" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="donation-pool">Pozo:</label>
+                        <input type="text" name="donation-pool" id="donation-pool" placeholder="Ej: 5000" required>
+                    </div>
+
+                    <div class="form__field form__field--full-width">
+                        <label for="description">Descripción:</label>
+                        <textarea name="description" id="description" placeholder="Breve descripción del torneo" required></textarea>
+                    </div>
+
+                    <div class="form__buttons">
+                        <button type="submit" class="button button--primary">Crear torneo</button>
+                        <button type="button" class="button button--secondary cancel--tournament--button">Cancelar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
         <section class="section__wrapper">
-            <div class="section__header">
-                <h2 class="section__title">Gestión de torneos</h2>
-                <span>Agrega, edita o elimina torneos</span>
-                <button class="button button--primary">Agregar torneo</button>
-            </div>
             <div class="section__content">
                 <div class="section__content--grid grid--2">
                     <article class="card grid--item">

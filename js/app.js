@@ -38,8 +38,30 @@ if ($admin) {
         const urlParams = new URLSearchParams(window.location.search)
         const username = urlParams.get('user')
         if (!username) return
-        $('.admin__welcome').textContent = `Bienvenido, ${username}!`
+        $('.admin__welcome').textContent = `Te damos la bienvenida, ${username}!`
     }
+
+    const toggleAddTournamentForm = () => {
+        $('.add--tournament--form').classList.toggle('add--tournament--form--active')
+        $('.add--tournament--button').textContent = $('.add--tournament--form').classList.contains('add--tournament--form--active') ? 'Cerrar formulario' : 'Agregar torneo'
+    }
+
+    $('.add--tournament--button').addEventListener('click', () => {
+        toggleAddTournamentForm()
+    })
+
+    $(".form .button--secondary").addEventListener('click', (event) => {
+        event.preventDefault()
+        toggleAddTournamentForm()
+        $('.add--tournament--form .form').reset()
+    })
+
+    $('.add--tournament--form .form').addEventListener('submit', (event) => {
+        event.preventDefault()
+        alert('Torneo agregado correctamente!')
+        toggleAddTournamentForm()
+        $('.add--tournament--form .form').reset()
+    })
 
     welcomeAdmin()
 }
