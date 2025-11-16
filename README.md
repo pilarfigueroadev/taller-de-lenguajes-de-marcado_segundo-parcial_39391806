@@ -193,3 +193,7 @@ Doy inicio al desarrollo del segundo parcial. Como en el anterior, todo el desar
 ### 📅 Fecha: [14/11/2025]
 **Comentario:** 
 Voy a resolver el login en un pop-up. Según las consignas, no existe una página "login.html", pero queda muy feo que el formulario de login se vea directamente en el index.html que es la home, en donde también ingresan usuarios que son simplemente visitantes interesados en el evento y no tienen una cuenta. Lo lógico sería tener un botón en el menú que diga "Login" y la misma te redirija a la página para loggearte. Como esto no está contemplado en las consignas, un pop-up suena lo más sensato para resolver esta funcionalidad.
+
+### 📅 Fecha: [16/11/2025]
+**Comentario:** 
+Popup completado visualmente, ahora toca hacer la funcionalidad de validar las credenciales y redirigir al dashboard del administrador. Me parece un espanto pasar el username que es un dato sensible a traves de la URL, pero toca hacerlo porque es parte de las consignas del parcial. Solo quiero dejar asentado que como developer jamas tomaria semejante decision, incluso sin tener un backend podria resolverlo de otra forma para hacer que admin.html sea una pagina privada. Se entiende que lo han solicitado de esta forma por la cantidad de contenidos dados en el cuatrimestre.
