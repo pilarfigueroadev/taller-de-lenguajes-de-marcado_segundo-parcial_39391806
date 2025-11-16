@@ -197,3 +197,11 @@ Voy a resolver el login en un pop-up. Según las consignas, no existe una págin
 ### 📅 Fecha: [16/11/2025]
 **Comentario:** 
 Popup completado visualmente, ahora toca hacer la funcionalidad de validar las credenciales y redirigir al dashboard del administrador. Me parece un espanto pasar el username que es un dato sensible a traves de la URL, pero toca hacerlo porque es parte de las consignas del parcial. Solo quiero dejar asentado que como developer jamas tomaria semejante decision, incluso sin tener un backend podria resolverlo de otra forma para hacer que admin.html sea una pagina privada. Se entiende que lo han solicitado de esta forma por la cantidad de contenidos dados en el cuatrimestre.
+
+### 📅 Fecha: [16/11/2025]
+**Comentario:** 
+Terminé el ABM de agregar, editar y eliminar torneos. Si bien no pidieron backend en las consignas, esto se podría realizar con localstorage. No obstante, no es un tema visto en el cuatrimestre y tampoco dan los tiempos para hacer ese desarrollo antes de la fecha de entrega, asi que decidí hacer la emulación visual mostrando y ocultando los elementos y con una ventana de confirmación.
+
+### 📅 Fecha: [16/11/2025]
+**Comentario:** 
+Recién me percato de que bootstrap lo están pidiendo obligatorio, aunque yo ya resolví los estilos y el responsive solo con flex y grid, que es más simple que implementar un framework entero solo para eso. Veré de que forma meter bootstrap sin que arruine el proyecto. Quizás algún icon...
