@@ -149,7 +149,7 @@ body {
             var(--background-color) 100%
         ),
         linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-        url("../images/hero.jpeg");
+        url("../images/banner.png");
     background-size: cover;
     background-position: center;
     height: 400px;
