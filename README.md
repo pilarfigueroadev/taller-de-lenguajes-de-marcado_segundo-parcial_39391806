@@ -149,9 +149,9 @@ Crear una web para **GameHub Solidario**, una comunidad que organiza torneos de 
 
 - ✅ Animaciones y transiciones CSS
 - ⏳ Optimización de imágenes
-- ⏳ Accesibilidad web (ARIA labels, alt texts)
-- ⏳ Meta tags para SEO
-- ⏳ Favicon personalizado
+- ✅ Accesibilidad web (ARIA labels, alt texts)
+- ✅ Meta tags para SEO
+- ✅ Favicon personalizado
 - ✅ Integración con redes sociales
 - ⏳ Contador de donaciones
 - ⏳ Mapa de ubicación de eventos
